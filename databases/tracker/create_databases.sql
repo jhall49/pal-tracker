@@ -8,3 +8,4 @@ CREATE USER IF NOT EXISTS 'tracker'@'%'
   IDENTIFIED BY '';
 GRANT ALL PRIVILEGES ON tracker_dev.* TO 'tracker' @'%';
 GRANT ALL PRIVILEGES ON tracker_test.* TO 'tracker' @'%';
+
