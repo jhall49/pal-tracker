@@ -26,12 +26,9 @@ public class JdbcTimeEntryRepositoryTest {
     public void setUp() {
         MysqlDataSource dataSource = new MysqlDataSource();
         dataSource.setUrl(System.getenv("SPRING_DATASOURCE_URL"));
-
         subject = new JdbcTimeEntryRepository(dataSource);
-
         jdbcTemplate = new JdbcTemplate(dataSource);
         jdbcTemplate.execute("DELETE FROM time_entries");
-
         TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
     }
 
