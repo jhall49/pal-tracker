@@ -8,6 +8,7 @@ import io.pivotal.pal.tracker.TimeEntryRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
 import java.sql.Date;
 import java.time.LocalDate;
